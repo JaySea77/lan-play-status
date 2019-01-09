@@ -1,13 +1,22 @@
 export default [
   {
+    ip: "jayseateam.nl",
+    port: 11451,
+    flag: "nl",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    highlight: true
+  },
+  {
     ip: "switch.lan-play.com",
     port: 11451,
     flag: "fr",
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined,
-    highlight: true
+    data: undefined
   },
   {
     ip: "au-west.switch.lan-play.com",
@@ -146,15 +155,6 @@ export default [
   },
   {
     ip: "lanplay.reboot.ms",
-    port: 11451,
-    flag: "nl",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined
-  },
-  {
-    ip: "jayseateam.nl",
     port: 11451,
     flag: "nl",
     platform: "switch",
