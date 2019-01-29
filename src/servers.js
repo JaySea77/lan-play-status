@@ -1,6 +1,6 @@
 export default [
   {
-    ip: "lan.jayseateam.nl",
+    ip: "switch.jayseateam.nl",
     port: 11451,
     flag: "nl",
     platform: "switch",
