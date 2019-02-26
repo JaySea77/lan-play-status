@@ -43,6 +43,12 @@
     "platform": "switch"
   },
   {
+    "ip": "frog-skins.com",
+    "port": 11451,
+    "flag": "us",
+    "platform": "switch",
+  },
+  {
     "ip": "qcswitch.ddns.net",
     "port": 11451,
     "flag": "ca",

@@ -64,6 +64,15 @@ export default [
     data: undefined
   },
   {
+    ip: "frog-skins.com",
+    port: 11451,
+    flag: "us",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined
+  },
+  {
     ip: "qcswitch.ddns.net",
     port: 11451,
     flag: "ca",
