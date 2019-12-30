@@ -7,6 +7,12 @@
     "highlight": true
   },
   {
+    "ip": "lanplay.reboot.ms",
+    "port": 11451,
+    "flag": "nl",
+    "platform": "switch"
+  },
+  {
     "ip": "switch.lan-play.com",
     "port": 11451,
     "flag": "fr",
@@ -106,12 +112,6 @@
     "ip": "euplay.secretalgorithm.com",
     "port": 11451,
     "flag": "lt",
-    "platform": "switch"
-  },
-  {
-    "ip": "lanplay.reboot.ms",
-    "port": 11451,
-    "flag": "nl",
     "platform": "switch"
   },
   {
