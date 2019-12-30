@@ -10,6 +10,15 @@ export default [
     highlight: true
   },
   {
+    ip: "lanplay.reboot.ms",
+    port: 11451,
+    flag: "nl",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined
+  },
+  {
     ip: "switch.lan-play.com",
     port: 11451,
     flag: "fr",
@@ -157,15 +166,6 @@ export default [
     ip: "euplay.secretalgorithm.com",
     port: 11451,
     flag: "lt",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined
-  },
-  {
-    ip: "lanplay.reboot.ms",
-    port: 11451,
-    flag: "nl",
     platform: "switch",
     status: undefined,
     ping: undefined,
