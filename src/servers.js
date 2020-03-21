@@ -11,7 +11,7 @@ export default [
     type: "node"
   },
   {
-    ip: "lan-play.jayseateam.nl",
+    ip: "switch2.jayseateam.nl",
     port: 11451,
     flag: "nl",
     platform: "switch",
