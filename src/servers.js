@@ -7,7 +7,8 @@ export default [
     status: undefined,
     ping: undefined,
     data: undefined,
-    highlight: true
+    highlight: true,
+    type: "node"
   },
   {
     ip: "lanplay.reboot.ms",
@@ -16,7 +17,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "switch.lan-play.com",
@@ -25,7 +27,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "au-west.switch.lan-play.com",
@@ -34,7 +37,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "au-east.switch.lan-play.com",
@@ -43,7 +47,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "nxlan.duckdns.org",
@@ -52,7 +57,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "pcoh.ddns.net",
@@ -61,7 +67,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "us.nx-s.cf",
@@ -70,7 +77,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "frog-skins.com",
@@ -79,7 +87,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "qcswitch.ddns.net",
@@ -88,7 +97,18 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
+  },
+  {
+    ip: "north-lanplay.ddns.net",
+    port: 11451,
+    flag: "ca",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    type: "dotnet"
   },
   {
     ip: "fr.fadx.co.uk",
@@ -97,7 +117,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "nxlanfr.hopto.org",
@@ -106,7 +127,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "switch.emiyl.com",
@@ -115,7 +137,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "switch.glaciergaming.co.uk",
@@ -124,7 +147,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "switch.homelab.tech",
@@ -133,7 +157,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "memehouse.de",
@@ -142,7 +167,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "relay.it-cybergate.club",
@@ -151,7 +177,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "nerdylife.de",
@@ -160,7 +187,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "euplay.secretalgorithm.com",
@@ -169,7 +197,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "lanplay2.reboot.ms",
@@ -178,7 +207,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "switch.goffy.tk",
@@ -187,7 +217,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "nswbr.ddns.net",
@@ -196,7 +227,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "177.54.110.45",
@@ -205,7 +237,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "slp.rush-hour.wo.tc",
@@ -214,7 +247,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "jp.nx-s.cf",
@@ -223,7 +257,8 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
   },
   {
     ip: "switch.adelphia.xyz",
@@ -232,6 +267,57 @@ export default [
     platform: "switch",
     status: undefined,
     ping: undefined,
-    data: undefined
+    data: undefined,
+    type: "node"
+  },
+  {
+    ip: "switch-la.nplay.asia",
+    port: 11451,
+    flag: "vn",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    type: "dotnet"
+  },
+  {
+    ip: "nut.r3n3.at",
+    port: 11451,
+    flag: "at",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    type: "dotnet"
+  },
+  {
+    ip: "bluehouse.servepics.com",
+    port: 11451,
+    flag: "mx",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    type: "dotnet"
+  },
+  {
+    ip: "epicna.ddns.net",
+    port: 11451,
+    flag: "ca",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    type: "dotnet"
+  },
+  {
+    ip: "kirbfeels.throwbackcountdown.com",
+    port: 11451,
+    flag: "us",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    type: "dotnet"
   }
 ];

@@ -20,10 +20,10 @@
     </p>
     <p>
       <a
-        href="https://github.com/spacemeowx2/switch-lan-play/releases/download/v0.0.7/lan-play-macos"
+        href="https://www111.zippyshare.com/v/2DNOz1XM/file.html"
         target="=_blank"
       >
-        MacOS v0.0.7
+        MacOS v0.2.1
       </a>
     </p>
     <p>
@@ -37,18 +37,10 @@
     <h2>Switch Sysmodule and Homebrew (ldn_mitm)</h2>
     <p>
       <a
-        href="https://github.com/spacemeowx2/ldn_mitm/releases/download/v1.2.7/ldn_mitm_v1.2.7.kip"
+        href="https://github.com/spacemeowx2/ldn_mitm/releases/download/v1.3.3/ldn_mitm_v1.3.3.zip"
         target="=_blank"
       >
-        Ldn_mtm v1.2.7
-      </a>
-    </p>
-    <p>
-      <a
-        href="https://github.com/spacemeowx2/ldn_mitm/releases/download/v1.2.7/ldnmitm_config.nro"
-        target="=_blank"
-      >
-        Ldn_mtm config homebrew v1.2.7
+        Ldn_mtm v1.3.3
       </a>
     </p>
     <em> (or you can use SX-OS v2.5+) </em>
