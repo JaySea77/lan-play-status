@@ -11,6 +11,17 @@ export default [
     type: "node"
   },
   {
+    ip: "lan-play.jayseateam.nl",
+    port: 11451,
+    flag: "nl",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    highlight: true,
+    type: "dotnet"
+  },
+  {
     ip: "lanplay.reboot.ms",
     port: 11451,
     flag: "nl",
