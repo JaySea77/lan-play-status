@@ -12,7 +12,7 @@ export default [
   },
   {
     ip: "switch2.jayseateam.nl",
-    port: 11451,
+    port: 11452,
     flag: "nl",
     platform: "switch",
     status: undefined,
