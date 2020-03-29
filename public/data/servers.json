@@ -14,6 +14,13 @@
     "type": "dotnet"
   },
   {
+    "ip": "switch.jayseateam.nl",
+    "port": 11453,
+    "flag": "nl",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
     "ip": "switch.lan-play.com",
     "port": 11451,
     "flag": "fr",

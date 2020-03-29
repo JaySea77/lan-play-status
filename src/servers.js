@@ -22,6 +22,17 @@ export default [
     highlight: true
   },
   {
+    ip: "switch.jayseateam.nl",
+    port: 11453,
+    flag: "nl",
+    platform: "switch",
+    type: "node",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    highlight: true
+  },
+  {
     ip: "switch.lan-play.com",
     port: 11451,
     flag: "fr",
