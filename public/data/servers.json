@@ -14,13 +14,6 @@
     "type": "dotnet"
   },
   {
-    "ip": "lanplay.reboot.ms",
-    "port": 11451,
-    "flag": "fr",
-    "platform": "switch",
-    "type": "node"
-  },
-  {
     "ip": "switch.lan-play.com",
     "port": 11451,
     "flag": "fr",
@@ -33,27 +26,6 @@
     "flag": "fr",
     "platform": "switch",
     "type": "rust"
-  },
-  {
-    "ip": "au-west.switch.lan-play.com",
-    "port": 11451,
-    "flag": "au",
-    "platform": "switch",
-    "type": "node"
-  },
-  {
-    "ip": "au-east.switch.lan-play.com",
-    "port": 11451,
-    "flag": "au",
-    "platform": "switch",
-    "type": "node"
-  },
-  {
-    "ip": "nxlan.duckdns.org",
-    "port": 11451,
-    "flag": "us",
-    "platform": "switch",
-    "type": "node"
   },
   {
     "ip": "pcoh.ddns.net",
@@ -77,6 +49,13 @@
     "type": "node"
   },
   {
+    "ip": "34.69.148.75",
+    "port": 11451,
+    "flag": "us",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
     "ip": "north-lanplay.ddns.net",
     "port": 11451,
     "flag": "ca",
@@ -84,7 +63,7 @@
     "type": "node"
   },
   {
-    "ip": "switch.homelab.tech",
+    "ip": "34.89.92.59",
     "port": 11451,
     "flag": "us",
     "platform": "switch",
@@ -112,16 +91,30 @@
     "type": "node"
   },
   {
-    "ip": "jp.nx-s.cf",
+    "ip": "lanplay.reboot.ms",
     "port": 11451,
-    "flag": "nl",
+    "flag": "fr",
     "platform": "switch",
     "type": "node"
   },
   {
-    "ip": "lanplay.r3n3.at",
+    "ip": "177.54.110.45",
     "port": 11451,
-    "flag": "de",
+    "flag": "br",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
+    "ip": "35.235.1.55",
+    "port": 11451,
+    "flag": "us",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
+    "ip": "jp.nx-s.cf",
+    "port": 11451,
+    "flag": "nl",
     "platform": "switch",
     "type": "node"
   },
@@ -130,19 +123,47 @@
     "port": 11451,
     "flag": "vn",
     "platform": "switch",
-    "type": "dotnet"
+    "type": "node"
   },
   {
-    "ip": "nut.r3n3.at",
+    "ip": "switch.0mn1b0x.com",
+    "port": 11451,
+    "flag": "au",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
+    "ip": "lanplay2.reboot.ms",
+    "port": 11451,
+    "flag": "gb",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "bluehouse.servepics.com",
+    "port": 11451,
+    "flag": "mx",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "lanplay.r3n3.at",
     "port": 11451,
     "flag": "de",
     "platform": "switch",
     "type": "dotnet"
   },
   {
-    "ip": "bluehouse.servepics.com",
+    "ip": "nxlan.duckdns.org",
     "port": 11451,
-    "flag": "mx",
+    "flag": "us",
+    "platform": "switch",
+    "type": "dotnet"
+  },
+  {
+    "ip": "nut.r3n3.at",
+    "port": 11451,
+    "flag": "de",
     "platform": "switch",
     "type": "dotnet"
   },
@@ -164,6 +185,13 @@
     "ip": "mhguguts.ddns.net",
     "port": 11451,
     "flag": "gb",
+    "platform": "switch",
+    "type": "dotnet"
+  },
+  {
+    "ip": "open.t0g3pii.tk",
+    "port": 11451,
+    "flag": "de",
     "platform": "switch",
     "type": "dotnet"
   }
