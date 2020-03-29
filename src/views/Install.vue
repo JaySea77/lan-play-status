@@ -22,7 +22,7 @@
         <br />
         <strong>DNS settings</strong><br />
         Primary DNS: 163.172.141.219<br />
-        Secondary DNS: 45.248.48.62<br />
+        Secondary DNS: 207.246.121.77<br />
       </code>
     </p>
     <p>Please follow the screenshots:</p>
@@ -61,10 +61,6 @@
     <p>
       The application will prompt you to enter the relay server address. You can
       choose the server you want, like <code>switch.lan-play.com:11451</code>.
-    </p>
-    <p>
-      Then, the application will prompt you to enter your switch's LAN
-      "interface". You must choose the one that is connected to your router.
     </p>
     <h2>4 - Enjoy online LAN Play on Switch</h2>
     <p>First, your must activate your wifi.</p>

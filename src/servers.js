@@ -8,7 +8,7 @@ export default [
     ping: undefined,
     data: undefined,
     highlight: true,
-    type: "node"
+    type: "rust"
   },
   {
     ip: "switch.jayseateam.nl",
@@ -40,6 +40,17 @@ export default [
     ping: undefined,
     data: undefined,
     type: "node"
+  },
+  {
+    ip: "switch.lan-play.com",
+    port: 11452,
+    flag: "fr",
+    platform: "switch",
+    status: undefined,
+    ping: undefined,
+    data: undefined,
+    highlight: true,
+    type: "rust"
   },
   {
     ip: "au-west.switch.lan-play.com",
@@ -84,7 +95,7 @@ export default [
   {
     ip: "us.nx-s.cf",
     port: 11451,
-    flag: "us",
+    flag: "nl",
     platform: "switch",
     status: undefined,
     ping: undefined,
@@ -102,16 +113,6 @@ export default [
     type: "node"
   },
   {
-    ip: "qcswitch.ddns.net",
-    port: 11451,
-    flag: "ca",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
     ip: "north-lanplay.ddns.net",
     port: 11451,
     flag: "ca",
@@ -122,49 +123,9 @@ export default [
     type: "dotnet"
   },
   {
-    ip: "fr.fadx.co.uk",
-    port: 11451,
-    flag: "fr",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
-    ip: "nxlanfr.hopto.org",
-    port: 11451,
-    flag: "fr",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
-    ip: "switch.emiyl.com",
-    port: 11451,
-    flag: "gb",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
-    ip: "switch.glaciergaming.co.uk",
-    port: 11451,
-    flag: "gb",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
     ip: "switch.homelab.tech",
     port: 11451,
-    flag: "gb",
+    flag: "us",
     platform: "switch",
     status: undefined,
     ping: undefined,
@@ -173,16 +134,6 @@ export default [
   },
   {
     ip: "memehouse.de",
-    port: 11451,
-    flag: "de",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
-    ip: "relay.it-cybergate.club",
     port: 11451,
     flag: "de",
     platform: "switch",
@@ -212,26 +163,6 @@ export default [
     type: "node"
   },
   {
-    ip: "switch.goffy.tk",
-    port: 11451,
-    flag: "no",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
-    ip: "nswbr.ddns.net",
-    port: 11451,
-    flag: "br",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
     ip: "177.54.110.45",
     port: 11451,
     flag: "br",
@@ -242,29 +173,9 @@ export default [
     type: "node"
   },
   {
-    ip: "slp.rush-hour.wo.tc",
-    port: 11451,
-    flag: "kr",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
     ip: "jp.nx-s.cf",
     port: 11451,
-    flag: "jp",
-    platform: "switch",
-    status: undefined,
-    ping: undefined,
-    data: undefined,
-    type: "node"
-  },
-  {
-    ip: "switch.adelphia.xyz",
-    port: 11451,
-    flag: "sg",
+    flag: "nl",
     platform: "switch",
     status: undefined,
     ping: undefined,
