@@ -15,7 +15,7 @@ const servers = serversSource.map(
       status: undefined,
       ping: undefined,
       data: undefined,
-      highlight: ip === "switch.lan-play.com"
+      highlight: ip === "switch.jayseateam.nl"
     };
   }
 );

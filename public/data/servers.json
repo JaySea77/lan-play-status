@@ -95,14 +95,14 @@
     "port": 11451,
     "flag": "at",
     "platform": "switch",
-    "type": "dotnet"
+    "type": "rust"
   },
   {
     "ip": "lanplay.r3n3.at",
     "port": 11451,
     "flag": "at",
     "platform": "switch",
-    "type": "dotnet"
+    "type": "rust"
   },
   {
     "ip": "open.t0g3pii.tk",
