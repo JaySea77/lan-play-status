@@ -25,14 +25,14 @@
     "port": 11451,
     "flag": "fr",
     "platform": "switch",
-    "type": "node"
+    "type": "rust"
   },
   {
     "ip": "switch.lan-play.com",
     "port": 11452,
     "flag": "fr",
     "platform": "switch",
-    "type": "rust"
+    "type": "node"
   },
   {
     "ip": "nut.r3n3.at",
