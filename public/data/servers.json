@@ -35,18 +35,18 @@
     "type": "rust"
   },
   {
-    "ip": "lanplay.reboot.ms",
+    "ip": "nut.r3n3.at",
     "port": 11451,
-    "flag": "fr",
+    "flag": "at",
     "platform": "switch",
-    "type": "node"
+    "type": "rust"
   },
   {
-    "ip": "frog-skins.com",
+    "ip": "lanplay.r3n3.at",
     "port": 11451,
-    "flag": "us",
+    "flag": "at",
     "platform": "switch",
-    "type": "node"
+    "type": "rust"
   },
   {
     "ip": "nxlan.duckdns.org",
@@ -54,20 +54,6 @@
     "flag": "us",
     "platform": "switch",
     "type": "rust"
-  },
-  {
-    "ip": "switch-la.nplay.asia",
-    "port": 11451,
-    "flag": "vn",
-    "platform": "switch",
-    "type": "node"
-  },
-  {
-    "ip": "switch.0mn1b0x.com",
-    "port": 11451,
-    "flag": "au",
-    "platform": "switch",
-    "type": "node"
   },
   {
     "ip": "bluehouse.servepics.com",
@@ -84,25 +70,39 @@
     "type": "rust"
   },
   {
-    "ip": "nut.r3n3.at",
-    "port": 11451,
-    "flag": "at",
-    "platform": "switch",
-    "type": "rust"
-  },
-  {
-    "ip": "lanplay.r3n3.at",
-    "port": 11451,
-    "flag": "at",
-    "platform": "switch",
-    "type": "rust"
-  },
-  {
     "ip": "open.t0g3pii.tk",
     "port": 11451,
     "flag": "de",
     "platform": "switch",
     "type": "rust"
+  },
+  {
+    "ip": "lanplay.reboot.ms",
+    "port": 11451,
+    "flag": "fr",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
+    "ip": "frog-skins.com",
+    "port": 11451,
+    "flag": "us",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
+    "ip": "switch-la.nplay.asia",
+    "port": 11451,
+    "flag": "vn",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
+    "ip": "switch.0mn1b0x.com",
+    "port": 11451,
+    "flag": "au",
+    "platform": "switch",
+    "type": "node"
   },
   {
     "ip": "kirbfeels.throwbackcountdown.com",
