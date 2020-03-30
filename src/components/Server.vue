@@ -2,7 +2,7 @@
   <tr :class="trClasses" v-if="server.status >= 0">
     <td>
       <span class="fullAddress">{{ fullAddress }}</span>
-      <button class="button margin-left" data-tooltip="Copy">
+      <button class="button margin-left hide--on-mobile" data-tooltip="Copy">
         <img
           alt="Copy"
           class="icon"
@@ -30,10 +30,10 @@
         </span>
       </span>
     </td>
-    <td :data-tooltip="country">
+    <td class="hide--on-mobile" :data-tooltip="country">
       <flag :iso="server.flag" :squared="false" />
     </td>
-    <CellIcon :platform="server.platform" />
+    <CellIcon class="hide--on-mobile" :platform="server.platform" />
     <td>
       <span v-if="server.ping >= 0">{{ server.ping }} ms</span>
       <span v-else>n/a</span>
@@ -124,7 +124,7 @@ export default {
             clearInterval(this.timerServer);
             this.timerServer = setInterval(this.refreshServer, 5000);
           }
-		  
+
           if (ctx.server.status === -1) {
             ctx.server.status = 1;
             clearInterval(this.timerServer);
