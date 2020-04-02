@@ -41,12 +41,11 @@ table {
   max-width: 800px;
   margin: 0px auto;
   td,
-  td,
   th {
     border-bottom: 1px solid #ddd;
     padding: 8px;
     text-align: center;
-
+    font-size: 0.9rem;
     @media only screen and (max-width: 768px) {
       padding: 2px;
     }
@@ -64,6 +63,11 @@ table {
 
     @media only screen and (max-width: 768px) {
       padding: 4px;
+    }
+  }
+  td {
+    .icon {
+      vertical-align: middle;
     }
   }
 }

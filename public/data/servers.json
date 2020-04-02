@@ -28,13 +28,6 @@
     "type": "rust"
   },
   {
-    "ip": "switch.lan-play.com",
-    "port": 11452,
-    "flag": "fr",
-    "platform": "switch",
-    "type": "node"
-  },
-  {
     "ip": "nut.r3n3.at",
     "port": 11451,
     "flag": "at",
@@ -125,6 +118,13 @@
     "platform": "switch",
     "type": "node"
   },
+  {
+    "ip": "switch.mainbareng.web.id",
+    "port": 11451,
+    "flag": "id",
+    "platform": "switch",
+    "type": "node"
+  }
   {
     "ip": "kirbfeels.throwbackcountdown.com",
     "port": 11451,
