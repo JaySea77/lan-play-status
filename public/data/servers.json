@@ -21,9 +21,9 @@
     "type": "node"
   },
   {
-    "ip": "switch.lan-play.com",
+    "ip": "matkhau.net",
     "port": 11451,
-    "flag": "fr",
+    "flag": "nl",
     "platform": "switch",
     "type": "rust"
   },
@@ -42,6 +42,20 @@
     "type": "rust"
   },
   {
+    "ip": "switch.lan-play.com",
+    "port": 11451,
+    "flag": "fr",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "nook-inc.net",
+    "port": 11451,
+    "flag": "fr",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "frog-skins.com",
     "port": 11451,
     "flag": "us",
@@ -56,12 +70,26 @@
     "type": "rust"
   },
   {
+    "ip": "aclanplay.servegame.org",
+    "port": 11451,
+    "flag": "us",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "nxlan-e.dentora.ca",
     "port": 11451,
     "flag": "ca",
     "platform": "switch",
     "type": "rust"
   },  
+  {
+    "ip": "mim.servebeer.com",
+    "port": 11451,
+    "flag": "ca",
+    "platform": "switch",
+    "type": "rust"
+  },
   {
     "ip": "bluehouse.servepics.com",
     "port": 11451,
@@ -70,9 +98,9 @@
     "type": "rust"
   },
   {
-    "ip": "matkhau.net",
+    "ip": "open.t0g3pii.tk",
     "port": 11451,
-    "flag": "nl",
+    "flag": "de",
     "platform": "switch",
     "type": "rust"
   },
@@ -84,18 +112,25 @@
     "type": "rust"
   },
   {
-    "ip": "aclanplay.servegame.org",
+    "ip": "switchlanplay-tw.ddns.net",
     "port": 11451,
-    "flag": "us",
+    "flag": "tw",
     "platform": "switch",
     "type": "rust"
   },
   {
-    "ip": "open.t0g3pii.tk",
+    "ip": "switch.0mn1b0x.com",
     "port": 11451,
-    "flag": "de",
+    "flag": "au",
     "platform": "switch",
     "type": "rust"
+  },
+  {
+    "ip": "switch.lan-play.com",
+    "port": 11452,
+    "flag": "fr",
+    "platform": "switch",
+    "type": "node"
   },
   {
     "ip": "lanplay.reboot.ms",
@@ -112,13 +147,6 @@
     "type": "node"
   },
   {
-    "ip": "switch.0mn1b0x.com",
-    "port": 11451,
-    "flag": "au",
-    "platform": "switch",
-    "type": "node"
-  },
-  {
     "ip": "switch.mainbareng.web.id",
     "port": 11451,
     "flag": "id",
@@ -126,9 +154,23 @@
     "type": "node"
   },
   {
+    "ip": "switch.0mn1b0x.com",
+    "port": 11453,
+    "flag": "au",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
     "ip": "kirbfeels.throwbackcountdown.com",
     "port": 11451,
     "flag": "us",
+    "platform": "switch",
+    "type": "dotnet"
+  },
+  {
+    "ip": "switch.0mn1b0x.com",
+    "port": 11452,
+    "flag": "au",
     "platform": "switch",
     "type": "dotnet"
   }
