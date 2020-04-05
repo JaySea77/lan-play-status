@@ -49,6 +49,13 @@
     "type": "rust"
   },
   {
+    "ip": "lanplay.reboot.ms",
+    "port": 11451,
+    "flag": "fr",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "nook-inc.net",
     "port": 11451,
     "flag": "fr",
@@ -128,13 +135,6 @@
   {
     "ip": "switch.lan-play.com",
     "port": 11452,
-    "flag": "fr",
-    "platform": "switch",
-    "type": "node"
-  },
-  {
-    "ip": "lanplay.reboot.ms",
-    "port": 11451,
     "flag": "fr",
     "platform": "switch",
     "type": "node"
