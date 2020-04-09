@@ -21,13 +21,6 @@
     "type": "node"
   },
   {
-    "ip": "matkhau.net",
-    "port": 11451,
-    "flag": "nl",
-    "platform": "switch",
-    "type": "rust"
-  },
-  {
     "ip": "nut.r3n3.at",
     "port": 11451,
     "flag": "at",
@@ -84,6 +77,20 @@
     "type": "rust"
   },
   {
+    "ip": "chasehall.net",
+    "port": 11451,
+    "flag": "us",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "matkhau.net",
+    "port": 11451,
+    "flag": "us",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "nxlan-e.dentora.ca",
     "port": 11451,
     "flag": "ca",
@@ -111,6 +118,13 @@
     "platform": "switch",
     "type": "rust"
   },
+   {
+    "ip": "bahamamama.ml",
+    "port": 11451,
+    "flag": "de",
+    "platform": "switch",
+    "type": "rust"
+  },  
   {
     "ip": "lanplay2.reboot.ms",
     "port": 11451,
@@ -157,6 +171,13 @@
     "ip": "switch.0mn1b0x.com",
     "port": 11453,
     "flag": "au",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
+    "ip": "joinsg.net",
+    "port": 11451,
+    "flag": "us",
     "platform": "switch",
     "type": "node"
   },
