@@ -161,6 +161,13 @@
     "type": "rust"
   },
   {
+    "ip": "187.95.40.212",
+    "port": 11451,
+    "flag": "br",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "switch.lan-play.com",
     "port": 11452,
     "flag": "fr",
