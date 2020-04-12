@@ -93,10 +93,17 @@
   {
     "ip": "nxlan-e.dentora.ca",
     "port": 11451,
-    "flag": "ca",
+    "flag": "us",
     "platform": "switch",
     "type": "rust"
-  },  
+  },
+  {
+    "ip": "joinsg.net",
+    "port": 11453,
+    "flag": "us",
+    "platform": "switch",
+    "type": "rust"
+  },
   {
     "ip": "mim.servebeer.com",
     "port": 11451,
@@ -124,7 +131,14 @@
     "flag": "de",
     "platform": "switch",
     "type": "rust"
-  },  
+  },
+  {
+    "ip": "nook-hq.ml",
+    "port": 11451,
+    "flag": "de",
+    "platform": "switch",
+    "type": "rust"
+  },
   {
     "ip": "lanplay2.reboot.ms",
     "port": 11451,
