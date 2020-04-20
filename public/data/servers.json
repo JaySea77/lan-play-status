@@ -196,6 +196,13 @@
     "type": "node"
   },
   {
+    "ip": "auslanplay.ddns.net",
+    "port": 11451,
+    "flag": "au",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
     "ip": "joinsg.net",
     "port": 11451,
     "flag": "us",
