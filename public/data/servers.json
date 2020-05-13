@@ -238,7 +238,7 @@
     "type": "node"
   },
   {
-    "ip": "Xswitch.imxyd.com",
+    "ip": "xswitch.imxyd.com",
     "port": 4999,
     "flag": "cn",
     "platform": "switch",

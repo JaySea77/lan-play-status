@@ -47,7 +47,7 @@ export default new Vuex.Store({
           "Content-Type": "application/x-www-form-urlencoded"
         },
         body:
-          "api_key=ur905839-35c881f5b6efeb47afd5bff9&format=json&all_time_uptime_ratio=1"
+          "api_key=ur925564-5f8cd1426068f606bc36cbb5&format=json&all_time_uptime_ratio=1"
       })
         .then(response => {
           return response.json();
