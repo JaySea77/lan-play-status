@@ -8,6 +8,13 @@
   },
   {
     "ip": "switch.jayseateam.nl",
+    "port": 11454,
+    "flag": "nl",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "switch.jayseateam.nl",
     "port": 11452,
     "flag": "nl",
     "platform": "switch",
@@ -52,6 +59,13 @@
     "ip": "nook-inc.net",
     "port": 11451,
     "flag": "fr",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "crypt51.corafamily.com",
+    "port": 11452,
+    "flag": "us",
     "platform": "switch",
     "type": "rust"
   },
