@@ -1,23 +1,79 @@
 <template>
   <div class="card">
     <img
-      :src="require(`@/assets/${image}`)"
+      :src="asset ? require(`@/assets/${asset}`) : image"
       class="card__image"
-      alt="Card Image"
+      alt=""
     />
     <div class="card__content">
       <h2>{{ title }}</h2>
-      <p>{{ message }}</p>
+      <p v-if="message">{{ message }}</p>
     </div>
   </div>
 </template>
 
 <script>
+const capitalize = ([first, ...rest]) =>
+  first ? first.toUpperCase() + rest.join("").toLowerCase() : "";
+
 export default {
   props: {
-    image: String,
     title: String,
-    message: String
+    asset: String,
+    message: String,
+    lang: String,
+    ds: Boolean
+  },
+  computed: {
+    image() {
+      let title = this.title
+        // Remove diactrics
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        // Fix strange names
+        .replace(/'n'/g, "n ")
+        // Remove useless chars
+        .replace(/:|'|®|™|!|\//g, "")
+        // Replace delimiter by space
+        .replace(/-|\./g, " ")
+        // Capitalize
+        .split(" ")
+        .map(s => capitalize(s))
+        .join("")
+        // Fix roman numbers
+        .replace("Ii", "II")
+        .replace("Iii", "III")
+        .replace("Iv", "IV")
+        .replace("Vi", "VI")
+        .replace("Vii", "VII")
+        .replace("Viii", "VIII")
+        .replace("Ix", "IX")
+        .replace("Xi", "XI")
+        .replace("Xii", "XII")
+        .replace("Xiii", "XIII")
+        .replace("Xiv", "XIV")
+        .replace("Xv", "XV")
+        .replace("Xvi", "XVI")
+        .replace("Xvii", "XVII")
+        .replace("Xviii", "XVIII")
+        .replace("Xix", "XIX")
+        .replace("Xx", "XX")
+        // Fix specifics namings
+        .replace("Rmx", "RMX")
+        .replace("Dx", "DX")
+        .replace("Fighterz", "FighterZ")
+        .replace("EaSportsFifa1", "EASportsFifa1")
+        .replace("EaSportsFifa1", "EASportsFifa1");
+
+      if (this.lang) {
+        title = `${title}_${this.lang}`;
+      }
+      //cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_EASportsFifa18~1_image500w.jpg
+
+      return `http://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_${
+        this.ds ? "download_software" : "5"
+      }/SQ_NSwitch${this.ds ? "DS" : ""}_${title}_image500w.jpg`;
+    }
   }
 };
 </script>

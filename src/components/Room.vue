@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <strong>{{ room.hostPlayerName }}</strong>
-    &mdash;
-    {{ game }}
-    &mdash;
-    <span :data-tooltip="players">
-      ({{ room.nodeCount }}/{{ room.nodeCountMax }})
-    </span>
+  <div :data-tooltip="tooltip">
+    <span v-if="game.icon !== undefined">
+      <img :src="game.icon" class="icon" :alt="gameName" />&nbsp;</span
+    >
+    <span v-else>
+      {{ gameName }}
+      &mdash; </span
+    ><strong>{{ room.hostPlayerName }}</strong> ({{ room.nodeCount }}/{{
+      room.nodeCountMax
+    }})
   </div>
 </template>
 
@@ -23,15 +25,23 @@ export default {
   computed: {
     game() {
       let gameId = this.room.contentId;
-      let obj = this.games.find(({ id }) => id === gameId);
+      return this.games.find(({ id }) => id === gameId);
+    },
+    gameName() {
+      let obj = this.game;
       return obj
         ? obj.region === undefined || obj.region === "" || obj.region === "WLD"
           ? obj.name
           : `${obj.name} (${obj.region})`
-        : gameId;
+        : this.game.id;
     },
-    players() {
-      return this.room.nodes.map(({ playerName }) => playerName).join(", ");
+    tooltip() {
+      let players = this.room.nodes
+        .map(({ playerName }) => playerName)
+        .join(", ");
+      return `${players} ${
+        this.room.nodes.length > 1 ? "plays together at" : "plays at"
+      } ${this.gameName}`;
     }
   }
 };
