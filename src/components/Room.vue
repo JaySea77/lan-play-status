@@ -1,14 +1,12 @@
 <template>
   <div :data-tooltip="tooltip">
     <span v-if="game.icon !== undefined">
-      <img :src="game.icon" class="icon" :alt="gameName" />&nbsp;</span
-    >
-    <span v-else>
-      {{ gameName }}
-      &mdash; </span
-    ><strong>{{ room.hostPlayerName }}</strong> ({{ room.nodeCount }}/{{
-      room.nodeCountMax
-    }})
+      <img :src="game.icon" class="icon" alt="" />
+    </span>
+    {{ gameName }}
+    &mdash;
+    <strong>{{ room.hostPlayerName }}</strong>
+    ({{ room.nodeCount }}/{{ room.nodeCountMax }})
   </div>
 </template>
 
@@ -33,7 +31,7 @@ export default {
         ? obj.region === undefined || obj.region === "" || obj.region === "WLD"
           ? obj.name
           : `${obj.name} (${obj.region})`
-        : this.game.id;
+        : this.room.contentId;
     },
     tooltip() {
       let players = this.room.nodes

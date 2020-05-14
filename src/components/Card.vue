@@ -31,46 +31,45 @@ export default {
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         // Fix strange names
+        .replace(/&/g, "and")
         .replace(/'n'/g, "n ")
+        .replace(/ 'EM/g, "em")
         // Remove useless chars
-        .replace(/:|'|®|™|!|\//g, "")
+        .replace(/:|'|®|™|!/g, "")
         // Replace delimiter by space
-        .replace(/-|\./g, " ")
+        .replace(/-|\.|\//g, " ")
         // Capitalize
         .split(" ")
         .map(s => capitalize(s))
         .join("")
         // Fix roman numbers
-        .replace("Ii", "II")
         .replace("Iii", "III")
-        .replace("Iv", "IV")
-        .replace("Vi", "VI")
-        .replace("Vii", "VII")
-        .replace("Viii", "VIII")
-        .replace("Ix", "IX")
-        .replace("Xi", "XI")
-        .replace("Xii", "XII")
-        .replace("Xiii", "XIII")
-        .replace("Xiv", "XIV")
-        .replace("Xv", "XV")
-        .replace("Xvi", "XVI")
-        .replace("Xvii", "XVII")
-        .replace("Xviii", "XVIII")
-        .replace("Xix", "XIX")
-        .replace("Xx", "XX")
+        .replace("CivilizationVi", "CivilizationVI")
         // Fix specifics namings
+        .replace("Ark", "ARK")
+        .replace("ark", "ARK")
+        .replace("MARKed", "Marked")
         .replace("Rmx", "RMX")
         .replace("Dx", "DX")
+        .replace("Korg", "KORG")
+        .replace("Nba2k", "NBA2K")
+        .replace("Gp18", "gp18")
+        .replace("SuperDragonBall", "Superdragonball")
+        .replace("Gp1", "GP1")
+        .replace("Gp2", "GP2")
+        .replace("Snk", "SNK")
         .replace("Fighterz", "FighterZ")
         .replace("EaSportsFifa1", "EASportsFifa1")
-        .replace("EaSportsFifa1", "EASportsFifa1");
+        .replace("ChikiChikiBoxyRacers", "_ChikiChikiBoxyRacers")
+        .replace("Mudrunner", "MudRunner")
+        .replace("ReMarsTered", "ReMarstered");
 
       if (this.lang) {
         title = `${title}_${this.lang}`;
       }
       //cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_5/SQ_NSwitch_EASportsFifa18~1_image500w.jpg
 
-      return `http://cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_${
+      return `//cdn01.nintendo-europe.com/media/images/11_square_images/games_18/nintendo_switch_${
         this.ds ? "download_software" : "5"
       }/SQ_NSwitch${this.ds ? "DS" : ""}_${title}_image500w.jpg`;
     }
