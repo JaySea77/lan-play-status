@@ -14,20 +14,6 @@
     "type": "rust"
   },
   {
-    "ip": "switch.jayseateam.nl",
-    "port": 11452,
-    "flag": "nl",
-    "platform": "switch",
-    "type": "dotnet"
-  },
-  {
-    "ip": "switch.jayseateam.nl",
-    "port": 11453,
-    "flag": "nl",
-    "platform": "switch",
-    "type": "node"
-  },
-  {
     "ip": "nut.r3n3.at",
     "port": 11451,
     "flag": "at",
@@ -126,6 +112,13 @@
     "type": "rust"
   },
   {
+    "ip": "localhost.boroghor.com",
+    "port": 11451,
+    "flag": "us",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "mim.servebeer.com",
     "port": 11451,
     "flag": "ca",
@@ -175,6 +168,13 @@
     "type": "rust"
   },
   {
+    "ip": "lanplay.cpalm.org",
+    "port": 11451,
+    "flag": "tw",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "switch.0mn1b0x.com",
     "port": 11451,
     "flag": "au",
@@ -187,6 +187,34 @@
     "flag": "br",
     "platform": "switch",
     "type": "rust"
+  },
+  {
+    "ip": "lanplay.ddns.net",
+    "port": 11451,
+    "flag": "br",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "lanplaybrasil.myddns.me",
+    "port": 11451,
+    "flag": "br",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "lebzul.duckdns.org",
+    "port": 11451,
+    "flag": "pa",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "switch.jayseateam.nl",
+    "port": 11453,
+    "flag": "nl",
+    "platform": "switch",
+    "type": "node"
   },
   {
     "ip": "switch.lan-play.com",
@@ -231,6 +259,13 @@
     "type": "node"
   },
   {
+    "ip": "switch.z5z.info",
+    "port": 11451,
+    "flag": "us",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
     "ip": "fireflies-online.club",
     "port": 11451,
     "flag": "cn",
@@ -243,6 +278,20 @@
     "flag": "cn",
     "platform": "switch",
     "type": "node"
+  },
+  {
+    "ip": "lanplay.duckdns.org",
+    "port": 11451,
+    "flag": "br",
+    "platform": "switch",
+    "type": "node"
+  },
+  {
+    "ip": "switch.jayseateam.nl",
+    "port": 11452,
+    "flag": "nl",
+    "platform": "switch",
+    "type": "dotnet"
   },
   {
     "ip": "kirbfeels.throwbackcountdown.com",
