@@ -14,20 +14,6 @@
     "type": "rust"
   },
   {
-    "ip": "nut.r3n3.at",
-    "port": 11451,
-    "flag": "at",
-    "platform": "switch",
-    "type": "rust"
-  },
-  {
-    "ip": "lanplay.r3n3.at",
-    "port": 11451,
-    "flag": "at",
-    "platform": "switch",
-    "type": "rust"
-  },
-  {
     "ip": "switch.lan-play.com",
     "port": 11451,
     "flag": "fr",

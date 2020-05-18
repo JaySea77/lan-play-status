@@ -36,12 +36,9 @@ a {
 
 .icon {
   width: 22px;
-  &--spin {
-    width: 12px;
-    animation-name: spin;
-    animation-duration: 1500ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+
+  &--small {
+    width: 16px;
   }
 }
 
