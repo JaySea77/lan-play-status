@@ -36,10 +36,6 @@ a {
 
 .icon {
   width: 22px;
-
-  &--small {
-    width: 16px;
-  }
 }
 
 .nav {
