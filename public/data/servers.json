@@ -192,13 +192,6 @@
     "type": "rust"
   },
   {
-    "ip": "187.95.40.212",
-    "port": 11451,
-    "flag": "br",
-    "platform": "switch",
-    "type": "rust"
-  },
-  {
     "ip": "lanplay.ddns.net",
     "port": 11451,
     "flag": "br",
