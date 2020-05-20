@@ -95,6 +95,7 @@ let cfw = [
     title: "Chou Tousouchuu and Chou Sentouchuu Double Pack",
     asset: "no-cover.jpg"
   },
+  { title: "Contra: Rogue Corps" },
   { title: "DAEMON X MACHINA" },
   { title: "Diablo III: Eternal Collection" },
   { title: "Disc Jam", ds: true },
