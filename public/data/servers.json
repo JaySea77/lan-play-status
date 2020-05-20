@@ -171,6 +171,13 @@
     "type": "rust"
   },
   {
+    "ip": "srv1.lanplay.group",
+    "port": 11451,
+    "flag": "gb",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "switchlanplay-tw.ddns.net",
     "port": 11451,
     "flag": "tw",
@@ -200,6 +207,13 @@
   },
   {
     "ip": "lanplaybrasil.myddns.me",
+    "port": 11451,
+    "flag": "br",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
+    "ip": "cajuina.ddns.net",
     "port": 11451,
     "flag": "br",
     "platform": "switch",

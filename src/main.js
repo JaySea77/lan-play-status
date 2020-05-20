@@ -3,14 +3,14 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
-import FlagIcon from "vue-flag-icon";
+import VueFlags from "@growthbunker/vueflags";
 import Konami from "./konami";
 
+Vue.use(VueFlags, { iconPath: "img/flags" });
 Vue.config.productionTip = false;
 
 let konami = false;
 
-Vue.use(FlagIcon);
 Vue.use(Konami, {
   callback: () => {
     if (!konami) {

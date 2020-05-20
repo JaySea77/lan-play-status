@@ -12,37 +12,36 @@
 </template>
 
 <style lang="scss">
-.app {
+body {
   font-family: "Nunito Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: rgb(185, 203, 217);
+  background-color: rgb(24, 26, 27);
 }
 
 a {
   font-weight: bold;
-  color: #212121;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: rgb(220, 218, 212);
 }
 
 .icon {
-  width: 22px;
+  height: 22px;
+}
+
+// new modifier for VueFlags
+.gb-flag {
+  &--icon {
+    height: 22px;
+  }
 }
 
 .nav {
   padding: 30px;
   a {
     &.router-link-exact-active {
-      color: #ff7043;
+      color: rgb(255, 112, 67);
     }
   }
 }
@@ -69,9 +68,9 @@ $tooltip-bottom: 80%;
     padding: 4px;
     width: 140px;
     border-radius: 4px;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
     background-color: hsla(0, 0%, 20%, 0.9);
-    color: #fff;
+    color: rgb(255, 255, 255);
     content: attr(data-tooltip);
     text-align: center;
     font-size: 14px;
@@ -83,7 +82,7 @@ $tooltip-bottom: 80%;
     left: 50%;
     margin-left: -5px;
     width: 0;
-    border-top: 5px solid #000;
+    border-top: 5px solid rgb(0, 0, 0);
     border-top: 5px solid hsla(0, 0%, 20%, 0.9);
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
@@ -97,6 +96,7 @@ $tooltip-bottom: 80%;
     opacity: 1;
   }
 }
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -104,7 +104,7 @@ table {
   margin: 0px auto;
   td,
   th {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgb(58, 58, 58);
     padding: 8px;
     text-align: center;
     font-size: 0.9rem;
@@ -118,14 +118,14 @@ table {
     }
   }
   tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: rgb(28, 30, 31);
   }
   tr:hover {
-    background-color: #ddd;
+    background-color: rgb(34, 36, 37);
   }
   th {
     padding: 12px;
-    background-color: #5f4339;
+    background-color: rgb(95, 67, 57);
     color: white;
 
     @media only screen and (max-width: 768px) {
@@ -138,9 +138,47 @@ table {
     }
   }
 }
+
+button {
+  background-color: rgb(24, 26, 27);
+  color: rgb(232, 230, 227);
+  border-color: rgb(87, 87, 87);
+  border-radius: 4px;
+}
+
 @media screen and (max-width: 768px) {
   .hide--on-mobile {
     display: none;
+  }
+  .inline-block--on-mobile {
+    display: block;
+  }
+}
+
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(44, 62, 80);
+  }
+  a {
+    color: rgb(33, 33, 33);
+  }
+  table {
+    th,
+    td {
+      border-color: rgb(221, 221, 221);
+    }
+    tr:nth-child(even) {
+      background-color: rgb(242, 242, 242);
+    }
+    tr:hover {
+      background-color: rgb(221, 221, 221);
+    }
+  }
+  button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(33, 33, 33);
+    border-color: rgb(87, 87, 87);
   }
 }
 </style>
