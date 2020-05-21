@@ -51,6 +51,13 @@
     "hidden": true
   },
   {
+    "ip": "srv1.lanplay.group",
+    "port": 11451,
+    "flag": "fr",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "crypt51.corafamily.com",
     "port": 11452,
     "flag": "us",
@@ -165,13 +172,6 @@
   },
   {
     "ip": "lanplay2.reboot.ms",
-    "port": 11451,
-    "flag": "gb",
-    "platform": "switch",
-    "type": "rust"
-  },
-  {
-    "ip": "srv1.lanplay.group",
     "port": 11451,
     "flag": "gb",
     "platform": "switch",
