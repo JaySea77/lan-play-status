@@ -1,15 +1,18 @@
 import Vue from "vue";
 import Vuex from "vuex";
+
 import serversSource from "../public/data/servers.json";
-import communitiesSource from "./data/communities.json";
-import games from "./data/games.json";
+import communitiesSource from "@/data/communities.json";
+import lobbiesSource from "@/data/lobbies.json";
+import gamesSource from "@/data/games.json";
+import gamesOfwSource from "@/data/games-ofw.json";
+import gamesCfwSource from "@/data/games-cfw.json";
+
+import { getGameId, getGame, getGameName } from "@/utils/games";
+import { filterBy, rejectBy, truthyBy, falsyBy } from "@/utils/filters";
+import { sortByString } from "@/utils/sorts";
 
 Vue.use(Vuex);
-
-const isVisible = o => !o.hidden;
-const isHidden = o => !!o.hidden;
-const isRust = o => o.type === "rust";
-const isNotRust = o => o.type !== "rust";
 
 const serverMapping = ({
   ip,
@@ -35,14 +38,32 @@ const communityMapping = community => {
   };
 };
 
+const lobbyMapping = lobby => {
+  lobby.title = lobby.games
+    .map(_gameId => {
+      let gameId = getGameId(_gameId);
+      let game = getGame(gamesSource, gameId);
+      return getGameName(game);
+    })
+    .sort()
+    .join(", ");
+  return lobby;
+};
+
+let gamesCfw = gamesCfwSource.sort(sortByString("title"));
+gamesCfw.push({ title: "And so on...", asset: "etc.jpg" });
+
 export default new Vuex.Store({
   state: {
     servers: serversSource
-      .filter(isVisible)
-      .filter(isRust)
+      .filter(falsyBy("hidden"))
+      .filter(filterBy("type", "rust"))
       .map(serverMapping),
     communities: communitiesSource.map(communityMapping),
-    games,
+    games: gamesSource,
+    gamesOfw: gamesOfwSource.sort(sortByString("title")),
+    gamesCfw,
+    lobbies: lobbiesSource.map(lobbyMapping),
     monitors: undefined
   },
 
@@ -73,13 +94,13 @@ export default new Vuex.Store({
     },
     loadHiddenServers(state) {
       serversSource
-        .filter(isHidden)
+        .filter(truthyBy("hidden"))
         .map(serverMapping)
         .forEach(server => state.servers.push(server));
     },
     loadMoreServers(state) {
       serversSource
-        .filter(isNotRust)
+        .filter(rejectBy("type", "rust"))
         .map(serverMapping)
         .forEach(server => state.servers.push(server));
     }

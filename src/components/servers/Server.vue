@@ -2,16 +2,7 @@
   <span class="contents" v-if="status >= 0">
     <tr :class="trClasses">
       <td>
-        <span class="fullAddress">{{ fullAddress }} </span>
-        <button class="copy-button hide--on-mobile" data-tooltip="Copy">
-          <img
-            alt="Copy"
-            class="icon"
-            :src="require(`@/assets/icons/copy.png`)"
-            data-copy-selector=".fullAddress"
-            v-on:click="copy"
-          />
-        </button>
+        <CopyButton :data="fullAddress" />
       </td>
       <td :data-tooltip="infos">
         <span v-if="data.active !== undefined && data.idle !== undefined">
@@ -47,7 +38,6 @@
       <td class="hide--on-mobile" :data-tooltip="country">
         <gb-flag :code="server.flag" class="icon" size="icon" />
       </td>
-      <CellIcon class="hide--on-mobile" :platform="server.platform" />
       <td>
         <span v-if="ping >= 0">
           {{ ping }}<span class="hide--on-mobile"> ms</span>
@@ -66,7 +56,9 @@
         <Room
           v-for="room in data.rooms"
           :room="room"
-          :key="`${room.hostPlayerName}:${room.contentId}`"
+          :key="
+            `${server.ip}:${server.port}:${room.hostPlayerName}:${room.contentId}`
+          "
         />
       </td>
     </tr>
@@ -74,59 +66,16 @@
 </template>
 
 <script>
-import CellIcon from "@/components/CellIcon.vue";
-import Room from "@/components/Room.vue";
-
-const queryRoom = `{room{contentId hostPlayerName nodeCount nodeCountMax advertiseData nodes{playerName}}}`;
-
-const subscriptionGql = `{"id":"1","type":"start","payload":{"variables":{},"extensions":{},"operationName":null,"query":"subscription{serverInfo{online idle}}"}}`;
-const closeGql = `{"id":"1","type":"stop"}`;
-
-const fetchWithTimeout = function(url, options, timeout = 20000) {
-  return Promise.race([
-    fetch(url, options),
-    new Promise((_, reject) =>
-      setTimeout(() => reject(new Error("timeout")), timeout)
-    )
-  ]);
-};
-
-const gqlPing = (server, delay = 0, timeout = 20000) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => reject(new Error("timeout")), timeout);
-    let url = `${location.protocol === "https:" ? "wss" : "ws"}://${server}`;
-    const ws = new WebSocket(url, "graphql-ws");
-    let timeoutId = undefined;
-    let lastTime = undefined;
-    const doPing = () => {
-      ws.send(subscriptionGql);
-      lastTime = Date.now();
-    };
-    ws.onmessage = e => {
-      const data = JSON.parse(e.data);
-      if (data.type === "data" && data.id === "1") {
-        let ping = Date.now() - lastTime;
-        resolve({ data: data.payload.data.serverInfo, ping });
-        ws.send(closeGql);
-        ws.close();
-      }
-    };
-    ws.onclose = () => {
-      timeoutId && clearTimeout(timeoutId);
-    };
-    ws.onerror = e => {
-      reject(e);
-    };
-    ws.onopen = () => {
-      ws.send(`{"type":"connection_init","payload":{}}`);
-      timeoutId = setTimeout(doPing, delay);
-    };
-  });
-};
+import CopyButton from "@/components/CopyButton.vue";
+import Room from "@/components/servers/Room.vue";
+import { getFullAddress } from "@/utils/servers";
+import { fetchWithTimeout } from "@/utils/fetch";
+import { gqlRequestAndPing } from "@/utils/graphql";
+import { queryRoom, subscriptionGql } from "@/queries";
 
 export default {
   components: {
-    CellIcon,
+    CopyButton,
     Room
   },
   data: () => {
@@ -143,7 +92,7 @@ export default {
   },
   computed: {
     fullAddress() {
-      return `${this.server.ip}:${this.server.port}`;
+      return getFullAddress(this.server);
     },
     infos() {
       let infos = "";
@@ -177,19 +126,10 @@ export default {
     }
   },
   methods: {
-    copy(event) {
-      let el = this.$el.querySelector(
-        event.target.getAttribute("data-copy-selector")
-      );
-      let range = document.createRange();
-      range.selectNode(el);
-      window.getSelection().addRange(range);
-      document.execCommand("copy");
-      window.getSelection().removeAllRanges();
-    },
     async gqlRefresh() {
-      let { data, ping } = await gqlPing(
-        `${this.server.ip}:${this.server.port}`
+      let { data, ping } = await gqlRequestAndPing(
+        `${this.server.ip}:${this.server.port}`,
+        subscriptionGql
       );
 
       try {
@@ -213,8 +153,8 @@ export default {
 
         this.ping = ping;
         this.data = {
-          active: data.online - data.idle,
-          ...data,
+          active: data.serverInfo.online - data.serverInfo.idle,
+          ...data.serverInfo,
           rooms: roomsData
         };
 
@@ -308,26 +248,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.contents {
-  display: contents;
-}
-.copy-button {
-  padding: 4px;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  background-color: #ffffff00;
-  border-radius: 4px;
-
-  &:hover {
-    background-color: #52525220;
-  }
-
-  &:active {
-    background-color: #52525240;
-    transform: translateY(1px);
-  }
-}
-</style>
