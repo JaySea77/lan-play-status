@@ -178,6 +178,13 @@
     "type": "rust"
   },
   {
+    "ip": "acnh.hopto.org",
+    "port": 11451,
+    "flag": "my",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "switchlanplay-tw.ddns.net",
     "port": 11451,
     "flag": "tw",
@@ -221,7 +228,7 @@
   },
   {
     "ip": "lebzul.duckdns.org",
-    "port": 11451,
+    "port": 11450,
     "flag": "pa",
     "platform": "switch",
     "type": "rust"
