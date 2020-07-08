@@ -171,6 +171,13 @@
     "type": "rust"
   },
   {
+    "ip": "lan.nonny.horse",
+    "port": 11451,
+    "flag": "de",
+    "platform": "switch",
+    "type": "rust"
+  },
+  {
     "ip": "lanplay2.reboot.ms",
     "port": 11451,
     "flag": "gb",
@@ -292,13 +299,6 @@
   {
     "ip": "fireflies-online.club",
     "port": 11451,
-    "flag": "cn",
-    "platform": "switch",
-    "type": "node"
-  },
-  {
-    "ip": "xswitch.imxyd.com",
-    "port": 4999,
     "flag": "cn",
     "platform": "switch",
     "type": "node"
